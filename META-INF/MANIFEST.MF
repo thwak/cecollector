@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: CECollector
+Bundle-SymbolicName: CECollector;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: cecollector.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.core.resources,
+ org.eclipse.text,
+ org.eclipse.ui.editors;bundle-version="3.8.200"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy
+Import-Package: org.eclipse.jface.text.source,
+ org.eclipse.ui.wizards.datatransfer

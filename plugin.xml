@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            default="false"
+            id="CECollector.editor2"
+            name="name">
+      </editor>
+   </extension>
+
+   <extension
+         point="org.eclipse.ui.actionSets">
+      <actionSet
+            label="Export Action Set"
+            visible="true"
+            id="CECollector.actionSet">
+         <menu
+               label="COMP3021"
+               id="exportMenu">
+            <separator
+                  name="exportGroup">
+            </separator>
+         </menu>
+         <action
+               label="&amp;Export COMP3021 Data"
+               icon="icons/sample.gif"
+               class="cecollector.actions.ExportAction"
+               tooltip="Export COMP3021 Data"
+               menubarPath="exportMenu/exportGroup"
+               toolbarPath="exportGroup"
+               id="cecollector.actions.ExportAction">
+         </action>
+      </actionSet>
+   </extension>
+   <extension
+         id="id1"
+         point="org.eclipse.core.resources.markers">
+   </extension>
+   <extension
+         point="org.eclipse.ui.startup">
+      <startup></startup>
+   </extension>
+   <extension
+         point="org.eclipse.ui.exportWizards">
+   </extension>
+
+</plugin>
